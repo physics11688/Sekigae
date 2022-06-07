@@ -27,7 +27,7 @@ if len(sys.argv) == 2:  # 引数ありならそのまま
 else:
     df_s = df.sample(frac=1).reset_index(drop=True)  # 引数なしなら読み込んだ名標データをシャッフル
 
-# 操作用のソート
+# 操作用のシート
 wb = openpyxl.load_workbook(EXCEL_FILE)
 ws = wb.get_sheet_by_name(name="master")
 
